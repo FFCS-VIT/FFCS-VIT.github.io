@@ -214,6 +214,9 @@ window.getCourses = () => {
     } else if (window.campus == 'Chennai') {
         courses_data.all_data = require('../data/all_data_chennai.json');
         courses_data.courses = require('../data/courses_chennai.json');
+    } else if (window.campus == 'Bhopal') {
+        courses_data.all_data = require('../data/all_data_bhopal.json');
+        courses_data.courses = require('../data/courses_bhopal.json');
     } else {
         courses_data.all_data = require('../data/all_data_vellore.json');
         courses_data.courses = require('../data/courses_vellore.json');
