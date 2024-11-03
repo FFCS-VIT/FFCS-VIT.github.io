@@ -68,6 +68,11 @@ window.switchCampus = () => {
         $('#last-update').text(lastUpdate.vellore);
         window.location.hash = '#Vellore';
         window.campus = 'Vellore';
+    } else if (window.location.hash.toLowerCase() === '#bhopal') {
+        $('#campus').text('Bhopal Campus');
+        $('#last-update').text(lastUpdate.ap);
+        window.location.hash = '#BHOPAL';
+        window.campus = 'AP';
     } else {
         window.location.hash = `#${window.campus}`;
     }
