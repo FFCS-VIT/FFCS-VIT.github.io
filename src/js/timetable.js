@@ -229,7 +229,7 @@ $(() => {
                 .attr('href', canvas.toDataURL('image/jpeg'))
                 .attr(
                     'download',
-                    `FFCS On The Go ${activeTable.name} (Course List).jpg`,
+                    `FFCS by KartikRajOfficial ${activeTable.name} (Course List).jpg`,
                 );
 
             $('body').append($a);
@@ -286,7 +286,7 @@ function appendHeader($layout, width) {
             'margin-bottom': '1rem',
         })
         .append(
-            $('<h3>FFCS On The Go</h3>').css({
+            $('<h3>FFCS by KartikRajOfficial</h3>').css({
                 margin: 0,
                 display: 'inline',
                 color: '#9c27b0',
