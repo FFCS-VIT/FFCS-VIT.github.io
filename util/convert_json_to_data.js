@@ -30,7 +30,7 @@ fs.writeFile(
 const outputBhopal = fs.readFileSync(
     path.resolve(__dirname + '/output_bhopal.json'),
 );
-const outputObjectChennai = JSON.parse(outputBhopal);
+const outputObjectBhopal = JSON.parse(outputBhopal);
 
 fs.writeFile(
     path.resolve(__dirname + '/../src/data/all_data_bhopal.json'),
