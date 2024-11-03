@@ -27,14 +27,14 @@ fs.writeFile(
     () => console.log('Updated all_data_chennai.json'),
 );
 
-const outputChennai = fs.readFileSync(
+const outputBhopal = fs.readFileSync(
     path.resolve(__dirname + '/output_bhopal.json'),
 );
 const outputObjectChennai = JSON.parse(outputBhopal);
 
 fs.writeFile(
     path.resolve(__dirname + '/../src/data/all_data_bhopal.json'),
-    JSON.stringify(outputObjectChennai),
+    JSON.stringify(outputObjectBhopal),
     () => console.log('Updated all_data_bhopal.json'),
 );
 
