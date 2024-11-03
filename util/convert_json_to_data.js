@@ -27,6 +27,17 @@ fs.writeFile(
     () => console.log('Updated all_data_chennai.json'),
 );
 
+const outputChennai = fs.readFileSync(
+    path.resolve(__dirname + '/output_bhopal.json'),
+);
+const outputObjectChennai = JSON.parse(outputBhopal);
+
+fs.writeFile(
+    path.resolve(__dirname + '/../src/data/all_data_bhopal.json'),
+    JSON.stringify(outputObjectChennai),
+    () => console.log('Updated all_data_bhopal.json'),
+);
+
 const outputAP = fs.readFileSync(path.resolve(__dirname + '/output_ap.json'));
 const outputObjectAP = JSON.parse(outputAP);
 
@@ -61,4 +72,10 @@ fs.writeFile(
     path.resolve(__dirname + '/../src/data/courses_ap.json'),
     JSON.stringify(uniqueCourses(outputObjectAP)),
     () => console.log('Updated courses_ap.json'),
+);
+
+fs.writeFile(
+    path.resolve(__dirname + '/../src/data/courses_bhopal.json'),
+    JSON.stringify(uniqueCourses(outputObjectAP)),
+    () => console.log('Updated courses_bhopal.json'),
 );
