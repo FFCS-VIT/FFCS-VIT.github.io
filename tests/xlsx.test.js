@@ -85,6 +85,14 @@ describe('are xlsx slots present in schema', () => {
         expect(extraSlots).toStrictEqual([]);
     });
 
+     test.skip('chennai', () => {
+        const xlsxSlots = getXlsxSlots('report_bhopal.xlsx');
+        const schemaSlots = getSchemaSlots('bhopal.json');
+        const extraSlots = [...xlsxSlots].filter((x) => !schemaSlots.has(x));
+
+        expect(extraSlots).toStrictEqual([]);
+    });
+
     test.skip('ap', () => {
         const xlsxSlots = getXlsxSlots('report_ap.xlsx');
         const schemaSlots = getSchemaSlots('ap.json');
