@@ -98,7 +98,7 @@ window.switchCampus = () => {
  */
 document.onkeydown = function (e) {
     if (e.ctrlKey && e.key == 'u') {
-        window.open('https://github.com/KartikRajOfficial/FFCSonTheGo');
+        window.open('https://github.com/KartikRajOfficial/FFCS-Winter-Semseter');
         return false;
     } else {
         return true;
