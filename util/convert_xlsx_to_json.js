@@ -27,3 +27,12 @@ fs.writeFile(
     JSON.stringify(XLSX.utils.sheet_to_json(ws_ap)),
     () => console.log('Updated output_ap.json'),
 );
+
+var wb_ap = XLSX.readFile(__dirname + '/report_bhopal.xlsx');
+var ws_ap = wb_ap.Sheets[wb_ap.SheetNames[0]];
+
+fs.writeFile(
+    __dirname + '/output_bhopal.json',
+    JSON.stringify(XLSX.utils.sheet_to_json(ws_ap)),
+    () => console.log('Updated output_bhoapl.json'),
+);
